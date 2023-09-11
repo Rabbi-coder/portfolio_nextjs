@@ -1,0 +1,105 @@
+.clients {
+  padding-top: 85px;
+  padding-bottom: 90px;
+  .client_left {
+    h2 {
+      font-weight: 700;
+      font-size: 42;
+      color: $white;
+      padding-right: 130px;
+      span {
+        color: #dffa6d;
+      }
+      @include media-breakpoint-down(md) {
+        font-size: 30px;
+        padding-right: 40px;
+      }
+    }
+    p {
+      font-weight: 400;
+      font-size: 18px;
+      color: $white;
+      line-height: 30px;
+      padding-right: 70px;
+      padding-top: 24px;
+      padding-bottom: 40px;
+      @include media-breakpoint-down(md) {
+        font-size: 16px;
+      }
+    }
+    .clients_image {
+      position: relative;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      .experience {
+        position: absolute;
+        bottom: 0;
+        right: -100px;
+        width: 280px;
+        padding: 40px 31px;
+        background-color: $main_color;
+        border-top-left-radius: 16px;
+        border: 4px solid $white;
+        h4 {
+          font-size: 48px;
+          font-weight: 700;
+          color: $white;
+        }
+        p {
+          padding: 0;
+          font-size: 18px;
+          font-weight: 400;
+        }
+        @include media-breakpoint-down(md) {
+          display: none;
+        }
+      }
+      @include media-breakpoint-down(md) {
+        padding-bottom: 20px;
+      }
+    }
+  }
+  .client_right {
+    .client_data {
+      padding: 40px;
+      box-sizing: border-box;
+      border: 1px solid $black;
+      border-radius: 8px;
+      transition: all linear 0.3s;
+      &:hover {
+        background-color: $main_color;
+      }
+
+      h4 {
+        margin-top: 20px;
+        color: $white;
+        font-size: 20px;
+        font-weight: 700;
+      }
+      p {
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 30px;
+        color: $white;
+      }
+      a {
+        font-size: 18px;
+        font-weight: 400;
+        color: $white;
+      }
+      .read_more {
+        svg {
+          fill: $white;
+          height: 25px;
+          width: 25px;
+        }
+      }
+      @include media-breakpoint-down(md) {
+        client_data: first-child;
+      }
+    }
+  }
+}

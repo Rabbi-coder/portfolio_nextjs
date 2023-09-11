@@ -1,0 +1,67 @@
+.subscription {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  @include media-breakpoint-down(md) {
+    padding-bottom: 30px;
+  }
+  .sub_main {
+    padding: 100px 50px;
+    height: 300px;
+    background-color: $main_color;
+    border-top-right-radius: 24px;
+    border-bottom-left-radius: 24px;
+    @include media-breakpoint-down(md) {
+      padding: 40px 20px;
+      height: 150px;
+    }
+    .sub_inner {
+      .sub_left {
+        width: 381px;
+        @include media-breakpoint-down(md) {
+          width: 150px;
+        }
+        h2 {
+          font-weight: 700;
+          font-size: 42px;
+          color: $white;
+          @include media-breakpoint-down(md) {
+            font-size: 18px;
+          }
+        }
+      }
+      .sub_right {
+        .sub_input {
+          background-color: $white;
+          border-radius: 8px;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          input {
+            background-color: transparent;
+            border: none;
+            outline: none;
+            padding-left: 15px;
+            width: 434px;
+            @include media-breakpoint-down(md) {
+              width: 100px;
+            }
+          }
+          button {
+            background-color: $main_color;
+            border: none;
+            outline: none;
+            padding: 20px 25px;
+            border-top-right-radius: 8px;
+            border-bottom-right-radius: 8px;
+            @include media-breakpoint-down(md) {
+              padding: 10px 5;
+            }
+            svg {
+              fill: $white;
+            }
+          }
+        }
+      }
+    }
+  }
+}
